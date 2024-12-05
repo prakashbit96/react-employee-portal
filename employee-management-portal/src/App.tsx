@@ -1,16 +1,11 @@
-import reactLogo from "./assets/react.svg";
+import { Outlet } from "react-router-dom";
 import "./App.css";
-import Test from "./jsx/Test";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Employee management portal</h1>
-      <Test/>
+      <Navbar/>
+      <Outlet/>
     </>
   );
 }
