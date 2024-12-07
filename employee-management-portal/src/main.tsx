@@ -8,6 +8,7 @@ import Home from "./components/Home.tsx";
 import routeConstants from "./utils/constants.ts";
 import About from "./components/About.tsx";
 import Contact from "./components/Contact.tsx";
+import Register from "./components/forms/Register.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
@@ -16,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path={routeConstants.ROUTE_HOME} element={<Home />} />
-          <Route path={routeConstants.ROUTE_ABOUT} element={<About />} />
+          <Route path={routeConstants.ROUTE_ABOUT} element={<Register />} />
           <Route path={routeConstants.ROUTE_CONTACT} element={<Contact />} />
         </Routes>
       </Provider>
